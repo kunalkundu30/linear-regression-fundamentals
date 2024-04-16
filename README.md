@@ -1,6 +1,6 @@
 # linear-regression-fundamentals
 
-The notebook 'linear regression.ipynb' visualizes key assumptions of linear regrssion.
+The notebook 'linear regression.ipynb' visualizes key assumptions of linear regression.
 
 Assumptions for equalisation of MSE minimisation to MLE maximisation:
 
