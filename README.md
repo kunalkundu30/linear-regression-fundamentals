@@ -22,11 +22,15 @@ Assumptions for equalisation of MSE minimisation to MLE maximisation:
     i. Autocorrelation plot - It is a plot of auto-correlation of errors. Ideally, the autocorrelation should be low and there should not be a pattern in the graph. If there is a pattern, it could mean that the errors are not independent of each other. This can be a useful thing to check in time series data.
 
 Assumption for robustness:
-1. Multi-collinearity
-    The features are not correlated with each other.
+1. Multi-collinearity:
+    The features are not correlated with each other. This can be checked using:
+    i. Heatmap of correlation plot - Columns having correlation higher than a threshold can be removed. This can only be used to detect bivariate relationship only.
+    ii. Variable Inflation Factor (VIF) - It shows correlation of a variable with group of variables. Higher the VIF, more the correlation. VIF is calculated by measuring how well each variable is defined by other variables. It is given by: VIF = 1/(1-R^2). If VIF for a variable is greater than 5, it means that variable can be explained by other variables and multicollinearity is high.
+    
 
 
 Other graphs:
 1. Reidual vs leverage plot
 2. Cook's distance plot
+
 These plots are used to visualise points that have high influence on the output of the model. If a few points have a very high influence, these points should be further investigated. This could help in identifying non-linearity, heteroskedasticity and outliers. Generally, points that have cook's distance less than 0.5 are not considered very influential.
