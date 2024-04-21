@@ -29,4 +29,4 @@ Assumption for robustness:
 Other graphs:
 1. Reidual vs leverage plot
 2. Cook's distance plot
-These plots are used to visualise points that have high influence on the output of the model. If a few points have a very high influence, these points should be further investigated. This could help in identifying non-linearity and heteroskedasticity. Generally, points that have cook's distance less than 0.5 are not considered very influential.
+These plots are used to visualise points that have high influence on the output of the model. If a few points have a very high influence, these points should be further investigated. This could help in identifying non-linearity, heteroskedasticity and outliers. Generally, points that have cook's distance less than 0.5 are not considered very influential.
