@@ -14,7 +14,7 @@ The notebook 'linear regression.ipynb' visualizes key assumptions of linear regr
     ii. Q-Q plot - This is a plot of error quantiles on y axis and quaniltes of standard normal distribution on x axis. Ideally, the points should lie on y=x line on graph.
     iii. Check mean of erros to be 0.
 3. **Homoscedasticity**:
-    The standard deviation of errors is same for error distribution for all samples. This can be checked using:
+    \n The standard deviation of errors is same for error distribution for all samples. This can be checked using:
     i. Scatter plot of errors with feature - Errors should be randomly distributed around mean 0. This is not a good way to use when linear rgression is used with more than 1 feature.
     ii. Scale-location plot - This is a scatter plot of sqrt(|Standardised erros|) vs predicted values. The points should be randomly distributed.
 4. **Independence of samples and errors**:
