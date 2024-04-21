@@ -12,7 +12,7 @@ The notebook 'linear regression.ipynb' visualizes key assumptions of linear regr
     The errors are normally distributed with mean 0. This can be checked using:<br>
     i. **Histogram of errors** - Errors should be normally distributed. This is not a good way to check because the number of bins is input by user.<br>
     ii. **Q-Q plot** - This is a plot of error quantiles on y axis and quaniltes of standard normal distribution on x axis. Ideally, the points should lie on y=x line on graph.<br>
-    iii. Check mean of erros to be 0.<br>
+    iii. Check mean of errors to be 0.<br>
 3. **Homoscedasticity**:<br>
     The standard deviation of errors is same for error distribution for all samples. This can be checked using:<br>
     i. **Scatter plot of errors with feature** - Errors should be randomly distributed around mean 0. This is not a good way to use when linear rgression is used with more than 1 feature.<br>
