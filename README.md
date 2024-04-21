@@ -14,18 +14,18 @@ The notebook 'linear regression.ipynb' visualizes key assumptions of linear regr
     ii. Q-Q plot - This is a plot of error quantiles on y axis and quaniltes of standard normal distribution on x axis. Ideally, the points should lie on y=x line on graph.<br>
     iii. Check mean of erros to be 0.<br>
 3. **Homoscedasticity**:<br>
-    The standard deviation of errors is same for error distribution for all samples. This can be checked using:
-    i. Scatter plot of errors with feature - Errors should be randomly distributed around mean 0. This is not a good way to use when linear rgression is used with more than 1 feature.
-    ii. Scale-location plot - This is a scatter plot of sqrt(|Standardised erros|) vs predicted values. The points should be randomly distributed.
-4. **Independence of samples and errors**:
-    The samples and errors are drawn independent to each other.
-    i. Autocorrelation plot - It is a plot of auto-correlation of errors. Ideally, the autocorrelation should be low and there should not be a pattern in the graph. If there is a pattern, it could mean that the errors are not independent of each other. This can be a useful thing to check in time series data.
+    The standard deviation of errors is same for error distribution for all samples. This can be checked using:<br>
+    i. Scatter plot of errors with feature - Errors should be randomly distributed around mean 0. This is not a good way to use when linear rgression is used with more than 1 feature.<br>
+    ii. Scale-location plot - This is a scatter plot of sqrt(|Standardised erros|) vs predicted values. The points should be randomly distributed.<br>
+4. **Independence of samples and errors**:<br>
+    The samples and errors are drawn independent to each other.<br>
+    i. Autocorrelation plot - It is a plot of auto-correlation of errors. Ideally, the autocorrelation should be low and there should not be a pattern in the graph. If there is a pattern, it could mean that the errors are not independent of each other. This can be a useful thing to check in time series data.<br>
 
-**Assumption for robustness of results**:
-1. **Multi-collinearity**:
-    The features are not correlated with each other. This can be checked using:
-    i. Heatmap of correlation plot - Columns having correlation higher than a threshold can be removed. This can only be used to detect bivariate relationship only.
-    ii. Variable Inflation Factor (VIF) - It shows correlation of a variable with group of variables. Higher the VIF, more the correlation. VIF is calculated by measuring how well each variable is defined by other variables. It is given by: VIF = 1/(1-R^2). If VIF for a variable is greater than 5, it means that variable can be explained by other variables and multicollinearity is high.
+**Assumption for robustness of results**:<br>
+1. **Multi-collinearity**:<br>
+    The features are not correlated with each other. This can be checked using:<br>
+    i. Heatmap of correlation plot - Columns having correlation higher than a threshold can be removed. This can only be used to detect bivariate relationship only.<br>
+    ii. Variable Inflation Factor (VIF) - It shows correlation of a variable with group of variables. Higher the VIF, more the correlation. VIF is calculated by measuring how well each variable is defined by other variables. It is given by: VIF = 1/(1-R^2). If VIF for a variable is greater than 5, it means that variable can be explained by other variables and multicollinearity is high.<br>
 
 
 **Other graphs**:
