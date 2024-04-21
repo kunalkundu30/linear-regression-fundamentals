@@ -21,7 +21,7 @@ The notebook 'linear regression.ipynb' visualizes key assumptions of linear regr
     The samples and errors are drawn independent to each other.
     i. Autocorrelation plot - It is a plot of auto-correlation of errors. Ideally, the autocorrelation should be low and there should not be a pattern in the graph. If there is a pattern, it could mean that the errors are not independent of each other. This can be a useful thing to check in time series data.
 
-**Assumption for robustness**:
+**Assumption for robustness of results**:
 1. **Multi-collinearity**:
     The features are not correlated with each other. This can be checked using:
     i. Heatmap of correlation plot - Columns having correlation higher than a threshold can be removed. This can only be used to detect bivariate relationship only.
