@@ -33,3 +33,13 @@ The notebook 'linear regression.ipynb' visualizes key assumptions of linear regr
 2. **Cook's distance plot**
 
 These plots are used to visualise points that have high influence on the output of the model. If a few points have a very high influence, these points should be further investigated. This could help in identifying non-linearity, heteroskedasticity and outliers. Generally, points that have cook's distance less than 0.5 are not considered very influential.
+
+
+**Confounding**
+It occurs when a variable affects the relationship between another dependent variable and independent variable. If there is a correlation between a dependent and independent variable, it does not necessarily mean causation.This can occur because of following reasons:<br>
+1. **Multicollinearity** - It is the extreme case of confounding.<br>
+2. **Selection bias** - It occurs when the data is biased because of the way in which it is collected. (Eg. group imbalance)<br>
+3. **Omitted Variable Bias** - It occurs when any variable is omitted from the linear regression.<br>
+It can be handled using:
+1. **Stratification** - It involves creating multiple categories or subgroups of data in which the confounding variable does not vary much and then test significance and strenth of association using Chi-squared test.
+
